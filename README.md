@@ -40,7 +40,9 @@ module.exports = {
         // root directory is the default cache path. it can be configured by following setting
         cacheFolder: path.resolve(__dirname, '.otherFolder'),
         // num of worker process default ,os.cpus().length
-        worderNum: 2
+        worderNum: 2,
+        // configuration options for uglify-js (as string)
+        ugliferOptions: '-b beautify=false,ascii-only=true'
     })]
 };
 ```
